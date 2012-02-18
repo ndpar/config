@@ -1,0 +1,17 @@
+[user]
+	name = Andrey Paramonov
+	email = git@ndpar.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	add = auto
+	interactive = auto
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	k = log --pretty=oneline --graph

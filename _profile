@@ -1,0 +1,58 @@
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+export MAVEN_HOME=/opt/maven/maven
+export ANT_HOME=/usr/share/ant
+export JBOSS_HOME=/opt/jboss/jboss
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
+export GROOVY_HOME=/opt/groovy/groovy
+export GRAILS_HOME=/opt/grails/grails
+export GRADLE_HOME=/opt/gradle/gradle
+export SOAPUI_HOME=/opt/soapui/soapui
+export APPENGINE_HOME=/opt/google/appengine-java-sdk
+export HSQLDB_HOME=/opt/hsqldb/hsqldb
+export HBASE_HOME=/opt/hbase/hbase
+
+export ANT_OPTS="-Xms512m -Xmx1024m -XX:PermSize=512m -XX:MaxPermSize=512m"
+
+#export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
+#export MAVEN_OPTS="-agentpath:/opt/yourkit/yjp-8.0.6/bin/mac/libyjpagent.jnilib=disablestacktelemetry,delay=10000,sessionname=Jetty"
+export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m"
+
+export ERL_LIB=/usr/local/lib/erlang/lib
+export RABBITMQ_HOME=/Users/andrey/projects/rabbit/rabbitmq-1.8.1
+
+export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
+
+export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
+
+#export PATH=$MAVEN_HOME/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$PATH:/opt/local/bin:$ANT_HOME/bin:$SOAPUI_HOME/bin
+export PATH=~/bin:$MAVEN_HOME/bin:$JAVA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:/usr/local/bin:$PATH:/opt/local/bin:$ANT_HOME/bin:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:~/projects/ndpar/ruby:/Applications/Flash\ Player.app/Contents/MacOS/:/usr/local/lib/erlang/bin:$MULTIMARKDOWN_HOME/bin:/opt/lisp/sbcl/sbcl/bin
+
+export PATH=$PATH:~/projects/gitorious/willgit/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+
+export SVN_EDITOR=vi
+export EDITOR=vi
+
+#export EDITOR="mate -w" 
+#export CVSEDITOR="mate -w" 
+#export SVN_EDITOR="mate -w"
+
+#set -o vi
+
+alias ll='ls -al'
+alias tac='tail -r'
+alias cdp='cd ~/projects'
+alias g='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
+#alias svn='/usr/local/bin/svn'
+
+##
+# Your previous /Users/andrey/.profile file was backed up as /Users/andrey/.profile.macports-saved_2010-05-23_at_20:12:29
+##
+
+# MacPorts Installer addition on 2010-05-23_at_20:12:29: adding an appropriate PATH variable for use with MacPorts.
+#export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
