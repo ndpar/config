@@ -11,6 +11,6 @@
     df = diff
     sb = show-branch
     lg = log -p
-    k = log --pretty=oneline --graph
+    k = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev=8
 [rerere]
     enabled = 1

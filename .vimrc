@@ -9,9 +9,6 @@
 "
 " ------------------------------------------------------------------------------
 
-filetype off
-call pathogen#infect()
-filetype plugin indent on
 syntax on
 
 set nocompatible
@@ -57,7 +54,7 @@ set statusline=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]
 " the text and replacing it
 set cpoptions+=$
 
-" Shoe line numbers
+" Show line numbers
 set number
 
 " Add the unnamed register to the clipboard
@@ -66,7 +63,7 @@ set clipboard+=unnamed
 " Search options
 set ignorecase
 set smartcase
-set gdefault
+"set gdefault
 set incsearch
 set showmatch
 set hlsearch
@@ -110,6 +107,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Write the file you don't have permissions to
+cmap w!! w !sudo tee > /dev/null %
 
 " ------------------------------------------------------------------------------
 " GUI settings
