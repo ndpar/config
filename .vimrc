@@ -10,6 +10,7 @@
 " ------------------------------------------------------------------------------
 
 syntax on
+filetype plugin indent on
 
 set nocompatible
 set encoding=utf-8
@@ -94,6 +95,8 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 nnoremap <leader>a :Ack
+nnoremap <leader>c y%
+nnoremap <leader>x d%
 
 nnoremap ; : 
 
@@ -110,6 +113,11 @@ nnoremap <C-l> <C-w>l
 
 " Write the file you don't have permissions to
 cmap w!! w !sudo tee > /dev/null %
+
+" VimClojure
+
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
 
 " ------------------------------------------------------------------------------
 " GUI settings
