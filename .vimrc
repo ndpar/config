@@ -97,6 +97,7 @@ vnoremap <tab> %
 nnoremap <leader>a :Ack
 nnoremap <leader>c y%
 nnoremap <leader>x d%
+nnoremap <leader>s :%s/
 
 nnoremap ; : 
 
