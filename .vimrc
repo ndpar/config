@@ -6,6 +6,7 @@
 " http://github.com/derekwyatt/vim-config
 " http://mislav.uniqpath.com/2011/12/vim-revisited
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim
+" http://ciaranm.wordpress.com/2008/05/15/my-vimrc/
 "
 " ------------------------------------------------------------------------------
 
@@ -19,6 +20,10 @@ set modelines=0
 " When the page starts to scroll, keep the cursor 8 lines from the top and 8
 " lines from the bottom
 set scrolloff=8
+
+" Enable a nice big viminfo file
+set viminfo='1000,f1,:1000,/1000
+set history=500
 
 " Tabulation options
 set tabstop=4

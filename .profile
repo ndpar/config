@@ -1,12 +1,19 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+## Better history
+##
+export HISTIGNORE="&:[ ]*"
+export HISTSIZE=2500
+export HISTFILESIZE=2500
+
 ## Home directories
 ##
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export MAVEN_HOME=/opt/maven/maven
 export ANT_HOME=/usr/share/ant
 export JBOSS_HOME=/opt/jboss/jboss
+export SCALA_HOME=/opt/scala/sbt
 export GROOVY_HOME=/opt/groovy/groovy
 export GRAILS_HOME=/opt/grails/grails
 export GRADLE_HOME=/opt/gradle/gradle
