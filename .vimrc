@@ -42,7 +42,7 @@ set showmode
 set showcmd
 
 " Make sure that unsaved buffers that are to be put in the background are 
-" allowed to go in there (ie. the "must save first" error doesn't come up)
+" allowed to go in there (ie. the 'must save first' error doesn't come up)
 set hidden
 
 " Make the command-line completion better
@@ -108,6 +108,7 @@ nnoremap ; :
 
 nnoremap <leader>v V`] 
 
+" In normal mode, jj escapes
 inoremap jj <ESC>
 
 nnoremap <leader>w <C-w>v<C-w>l
@@ -117,11 +118,13 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Make <space> in normal mode go down a page rather than left a character
+noremap <space> <C-f>
+
 " Write the file you don't have permissions to
-cmap w!! w !sudo tee > /dev/null %
+"cmap w!! w !sudo tee > /dev/null %
 
 " VimClojure
-
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 

@@ -30,19 +30,18 @@ export ERL_LIB=/usr/local/lib/erlang/lib
 
 export PROJECTS_HOME=~/projects
 
-## Options
+## Java options
 ##
 export ANT_OPTS="-Xms512m -Xmx1024m -XX:PermSize=512m -XX:MaxPermSize=512m"
-
 export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m"
 #export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
-#export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -agentpath:/opt/yourkit/yjp-8.0.6/bin/mac/libyjpagent.jnilib=disablestacktelemetry,delay=10000,sessionname=Jetty"
 
 ## Path
 ##
 export PATH=~/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
-export PATH=$PATH:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
+export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin
+export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
 export PATH=$PATH:/usr/local/lib/erlang/bin:/opt/lisp/sbcl/sbcl/bin
 export PATH=$PATH:/Applications/Flash\ Player.app/Contents/MacOS/
 
@@ -57,7 +56,7 @@ export EDITOR=vi
 ##
 alias ll='ls -al'
 alias tac='tail -r'
-alias cdp='cd ~/projects'
+alias cdp='cd $PROJECTS_HOME'
 alias g='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 
 # Windows specific settings
