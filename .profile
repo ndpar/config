@@ -6,6 +6,8 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export HISTIGNORE="&:[ ]*"
 export HISTSIZE=2500
 export HISTFILESIZE=2500
+export PROMPT_COMMAND=" history -a"
+shopt -s histappend
 
 ## Home directories
 ##
