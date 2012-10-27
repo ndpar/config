@@ -58,6 +58,9 @@ export EDITOR=vi
 
 ## Aliases
 ##
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
 alias ll='ls -al'
 alias tac='tail -r'
 alias cdp='cd $PROJECTS_HOME'
