@@ -1,13 +1,19 @@
 [user]
     name = Andrey Paramonov
     email = git@ndpar.com
+[core]
+    excludesfile = ~/.gitignore
 [color]
     ui = auto
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
 [alias]
     st = status
     ci = commit
-    br = branch
     co = checkout
+    br = branch
     df = diff
     sb = show-branch
     lg = log -p

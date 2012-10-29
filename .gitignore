@@ -1,0 +1,5 @@
+# Global Git ignore file
+# Put it in the home directory
+
+.DS_Store
+*.swp
