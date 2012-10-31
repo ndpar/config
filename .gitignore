@@ -2,4 +2,5 @@
 # Put it in the home directory
 
 .DS_Store
+.lein-failures
 *.swp
