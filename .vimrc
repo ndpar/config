@@ -19,7 +19,7 @@ set modelines=0
 
 " When the page starts to scroll, keep the cursor 8 lines from the top and 8
 " lines from the bottom
-set scrolloff=8
+set scrolloff=4
 
 " Enable a nice big viminfo file
 set viminfo='1000,f1,:1000,/1000
@@ -54,7 +54,7 @@ set backspace=indent,eol,start
 
 " Always put a status line in, even if there is only one window
 set laststatus=2
-set statusline=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]
+set statusline=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]\ %{fugitive#statusline()}
 
 " Make the 'cw' and like commands put a $ at the end instead of just deleting
 " the text and replacing it
