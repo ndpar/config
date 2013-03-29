@@ -24,6 +24,7 @@ export APPENGINE_HOME=/opt/google/appengine-java-sdk
 export HSQLDB_HOME=/opt/hsqldb/hsqldb
 export HBASE_HOME=/opt/hbase/hbase
 export MONGODB_HOME=/opt/mongodb/mongodb
+export NODEJS_HOME=/opt/nodejs/nodejs
 
 export RABBITMQ_HOME=/Users/andrey/projects/rabbit/rabbitmq-1.8.1
 export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
@@ -46,6 +47,7 @@ export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin
 export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
 export PATH=$PATH:$MONGODB_HOME/bin
+export PATH=$PATH:$NODEJS_HOME/bin
 export PATH=$PATH:/usr/local/lib/erlang/bin:/opt/lisp/sbcl/sbcl/bin
 export PATH=$PATH:/Applications/Flash\ Player.app/Contents/MacOS/
 
