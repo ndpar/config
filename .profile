@@ -11,34 +11,41 @@ shopt -s histappend
 
 ## Home directories
 ##
+export PROJECTS_HOME=~/projects
+
+export ERLANG_HOME=/opt/erlang/otp
+export ERL_LIB=$ERLANG_HOME/lib/erlang/lib
+
+export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
+
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
-export MAVEN_HOME=/opt/maven/maven
-export ANT_HOME=/usr/share/ant
-export JBOSS_HOME=/opt/jboss/jboss
+
 export SCALA_HOME=/opt/scala/sbt
 export GROOVY_HOME=/opt/groovy/groovy
 export GRAILS_HOME=/opt/grails/grails
-export GRADLE_HOME=/opt/gradle/gradle
-export SOAPUI_HOME=/opt/soapui/soapui
 export APPENGINE_HOME=/opt/google/appengine-java-sdk
+
+export MAVEN_HOME=/opt/maven/maven
+export ANT_HOME=/usr/share/ant
+export GRADLE_HOME=/opt/gradle/gradle
+
+export JBOSS_HOME=/opt/jboss/jboss
+export JETTY_HOME=/opt/jetty/jetty
+
 export HSQLDB_HOME=/opt/hsqldb/hsqldb
 export HBASE_HOME=/opt/hbase/hbase
 export MONGODB_HOME=/opt/mongodb/mongodb
+
+export RABBITMQ_HOME=$PROJECTS_HOME/rabbit/rabbitmq-1.8.1
 export NODEJS_HOME=/opt/nodejs/nodejs
-
-export RABBITMQ_HOME=/Users/andrey/projects/rabbit/rabbitmq-1.8.1
 export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
-export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
-
-export ERL_LIB=/usr/local/lib/erlang/lib
-
-export PROJECTS_HOME=~/projects
+export SOAPUI_HOME=/opt/soapui/soapui
 
 ## Java options
 ##
 export ANT_OPTS="-Xms512m -Xmx1024m -XX:PermSize=512m -XX:MaxPermSize=512m"
 export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m"
-#export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
+#export JAVA_OPTS="$JAVA_OPTS -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
 
 ## Path
 ##
@@ -48,10 +55,15 @@ export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME
 export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
 export PATH=$PATH:$MONGODB_HOME/bin
 export PATH=$PATH:$NODEJS_HOME/bin
-export PATH=$PATH:/usr/local/lib/erlang/bin:/opt/lisp/sbcl/sbcl/bin
+export PATH=$PATH:$ERLANG_HOME/bin
+export PATH=$PATH:/opt/lisp/sbcl/sbcl/bin
 export PATH=$PATH:/Applications/Flash\ Player.app/Contents/MacOS/
 
+# Optional (and useful) Git commands
 export PATH=$PATH:$PROJECTS_HOME/gitorious/willgit/bin
+
+# FOP is required to build Erlang docs
+export PATH=$PATH:/opt/fop/fop
 
 ## Editors
 ##
