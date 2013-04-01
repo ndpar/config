@@ -19,6 +19,7 @@ export ERL_LIB=$ERLANG_HOME/lib/erlang/lib
 export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JVISUALVM_HOME=/opt/visualvm/visualvm
 
 export SCALA_HOME=/opt/scala/sbt
 export GROOVY_HOME=/opt/groovy/groovy
@@ -50,7 +51,7 @@ export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m"
 
 ## Path
 ##
-export PATH=~/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
+export PATH=~/bin:$JVISUALVM_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin
 export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
