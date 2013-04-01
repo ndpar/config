@@ -36,6 +36,7 @@ export HSQLDB_HOME=/opt/hsqldb/hsqldb
 export HBASE_HOME=/opt/hbase/hbase
 export MONGODB_HOME=/opt/mongodb/mongodb
 
+export YAWS_HOME=/opt/yaws/yaws
 export RABBITMQ_HOME=$PROJECTS_HOME/rabbit/rabbitmq-1.8.1
 export NODEJS_HOME=/opt/nodejs/nodejs
 export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
@@ -56,6 +57,7 @@ export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$
 export PATH=$PATH:$MONGODB_HOME/bin
 export PATH=$PATH:$NODEJS_HOME/bin
 export PATH=$PATH:$ERLANG_HOME/bin
+export PATH=$PATH:$YAWS_HOME/bin
 export PATH=$PATH:/opt/lisp/sbcl/sbcl/bin
 export PATH=$PATH:/Applications/Flash\ Player.app/Contents/MacOS/
 
@@ -79,6 +81,7 @@ alias ll='ls -al'
 alias tac='tail -r'
 alias cdp='cd $PROJECTS_HOME'
 alias g='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
+alias chopen='/usr/bin/open -a "/Applications/Google Chrome.app"'
 
 # Windows specific settings
 #alias ll='ls -al --color'
