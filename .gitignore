@@ -5,6 +5,7 @@
 .lein-failures
 .lein-repl-history
 *.swp
+erl_crash.dump
 
 .idea
 *.iml

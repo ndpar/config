@@ -38,7 +38,7 @@ export HBASE_HOME=/opt/hbase/hbase
 export MONGODB_HOME=/opt/mongodb/mongodb
 
 export YAWS_HOME=/opt/yaws/yaws
-export RABBITMQ_HOME=$PROJECTS_HOME/rabbit/rabbitmq-1.8.1
+export RABBITMQ_HOME=/opt/rabbitmq/rabbitmq_server
 export NODEJS_HOME=/opt/nodejs/nodejs
 export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
 export SOAPUI_HOME=/opt/soapui/soapui
@@ -59,6 +59,7 @@ export PATH=$PATH:$MONGODB_HOME/bin
 export PATH=$PATH:$NODEJS_HOME/bin
 export PATH=$PATH:$ERLANG_HOME/bin
 export PATH=$PATH:$YAWS_HOME/bin
+export PATH=$PATH:$RABBITMQ_HOME/sbin
 export PATH=$PATH:/opt/lisp/sbcl/sbcl/bin
 export PATH=$PATH:/Applications/Flash\ Player.app/Contents/MacOS/
 
