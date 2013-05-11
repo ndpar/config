@@ -69,6 +69,10 @@ export PATH=$PATH:$PROJECTS_HOME/gitorious/willgit/bin
 # FOP is required to build Erlang docs
 export PATH=$PATH:/opt/fop/fop
 
+# Ruby manager
+export PATH=$PATH:$HOME/.rvm/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 ## Editors
 ##
 export SVN_EDITOR=vi
