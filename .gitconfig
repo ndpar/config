@@ -1,6 +1,6 @@
 [user]
     name = Andrey Paramonov
-    email = git@ndpar.com
+    email = github@ndpar.com
 [core]
     excludesfile = ~/.gitignore
 [color]
