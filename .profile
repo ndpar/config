@@ -4,8 +4,8 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 ## Better history
 ##
 export HISTIGNORE="&:[ ]*"
-export HISTSIZE=2500
-export HISTFILESIZE=2500
+export HISTSIZE=5000
+export HISTFILESIZE=5000
 export PROMPT_COMMAND=" history -a"
 shopt -s histappend
 
