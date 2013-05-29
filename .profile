@@ -38,7 +38,7 @@ export HBASE_HOME=/opt/hbase/hbase
 export MONGODB_HOME=/opt/mongodb/mongodb
 
 export YAWS_HOME=/opt/yaws/yaws
-export RABBITMQ_HOME=/opt/rabbitmq/rabbitmq_server
+export RABBITMQ_HOME=/opt/rabbitmq/rabbitmq
 export NODEJS_HOME=/opt/nodejs/nodejs
 export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
 export SOAPUI_HOME=/opt/soapui/soapui
