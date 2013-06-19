@@ -73,6 +73,9 @@ export PATH=$PATH:/opt/fop/fop
 export PATH=$PATH:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Groovy manager
+[[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"
+
 ## Editors
 ##
 export SVN_EDITOR=vi
