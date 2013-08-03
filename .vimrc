@@ -121,6 +121,10 @@ nnoremap <C-l> <C-w>l
 " Make <space> in normal mode go down a page rather than left a character
 noremap <space> <C-f>
 
+" Move up and down on a linewise basis
+:nmap j gj
+:nmap k gk
+
 " Write the file you don't have permissions to
 "cmap w!! w !sudo tee > /dev/null %
 
