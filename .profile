@@ -37,6 +37,8 @@ export HSQLDB_HOME=/opt/hsqldb/hsqldb
 export HBASE_HOME=/opt/hbase/hbase
 export MONGODB_HOME=/opt/mongodb/mongodb
 export RIAK_HOME=/opt/riak/riak/rel/riak
+export RIAK_CS_HOME=/opt/riak/riak-cs/rel/riak-cs
+export STANCHION_HOME=/opt/riak/stanchion/rel/stanchion
 
 export YAWS_HOME=/opt/yaws/yaws
 export RABBITMQ_HOME=/opt/rabbitmq/rabbitmq
@@ -62,6 +64,8 @@ export PATH=$PATH:$ERLANG_HOME/bin
 export PATH=$PATH:$YAWS_HOME/bin
 export PATH=$PATH:$RABBITMQ_HOME/sbin
 export PATH=$PATH:$RIAK_HOME/bin
+export PATH=$PATH:$RIAK_CS_HOME/bin
+export PATH=$PATH:$STANCHION_HOME/bin
 export PATH=$PATH:/opt/lisp/sbcl/sbcl/bin
 export PATH=$PATH:/Applications/Flash\ Player.app/Contents/MacOS/
 
