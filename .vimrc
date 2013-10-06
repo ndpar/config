@@ -159,7 +159,7 @@ if has("gui_running")
     endif
 else
     "set t_Co=256
-    colorscheme koehler
+    colorscheme github
 endif
 
 " Nice window title
