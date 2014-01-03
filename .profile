@@ -99,6 +99,7 @@ alias g='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 alias chopen='/usr/bin/open -a "/Applications/Google Chrome.app"'
 
 # Windows specific settings
+#alias vi=vim
 #alias ll='ls -al --color'
 #alias g='/cygdrive/c/Program\ Files/Vim/vim73/gvim.exe --remote-silent'
 
