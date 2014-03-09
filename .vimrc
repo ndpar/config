@@ -126,7 +126,7 @@ noremap <space> <C-f>
 :nmap k gk
 
 " Write the file you don't have permissions to
-"cmap w!! w !sudo tee > /dev/null %
+cnoremap sudow w !sudo tee % >/dev/null
 
 " VimClojure
 let g:vimclojure#HighlightBuiltins = 1
