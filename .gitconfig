@@ -15,7 +15,7 @@
     ci = commit
     co = checkout
     br = branch
-    df = diff
+    df = diff -w
     lg = log -p
     k = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev=8
     home = rev-parse --show-toplevel
