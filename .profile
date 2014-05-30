@@ -16,9 +16,11 @@ export PROJECTS_HOME=~/projects
 export ERLANG_HOME=/opt/erlang/otp
 export ERL_LIB=$ERLANG_HOME/lib/erlang/lib
 
+export APL_HOME=/opt/apl/apl
 export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
+export SML_HOME=/usr/local/smlnj
 
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
 export JVISUALVM_HOME=/opt/visualvm/visualvm
 
 export SCALA_HOME=/opt/scala/sbt
@@ -48,14 +50,16 @@ export SOAPUI_HOME=/opt/soapui/soapui
 
 ## Java options
 ##
-export ANT_OPTS="-Xms512m -Xmx1024m -XX:PermSize=512m -XX:MaxPermSize=512m"
-export MAVEN_OPTS="-Xms512m -Xmx768m -XX:PermSize=512m -XX:MaxPermSize=512m"
+export ANT_OPTS="-Xms512m -Xmx1024m"
+export MAVEN_OPTS="-Xms512m -Xmx768m"
 #export JAVA_OPTS="$JAVA_OPTS -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
 
 ## Path
 ##
 export PATH=~/bin:$JVISUALVM_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:$APL_HOME/bin
+export PATH=$PATH:$SML_HOME/bin
 export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin
 export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
 export PATH=$PATH:$MONGODB_HOME/bin
