@@ -17,10 +17,11 @@ export ERLANG_HOME=/opt/erlang/otp
 export ERL_LIB=$ERLANG_HOME/lib/erlang/lib
 
 export APL_HOME=/opt/apl/apl
+export RACKET_HOME=/Applications/Racket\ v5.3.6
 export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
 export SML_HOME=/usr/local/smlnj
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 export JVISUALVM_HOME=/opt/visualvm/visualvm
 
 export SCALA_HOME=/opt/scala/sbt
@@ -59,6 +60,7 @@ export MAVEN_OPTS="-Xms512m -Xmx768m"
 export PATH=~/bin:$JVISUALVM_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:$APL_HOME/bin
+export PATH=$PATH:$RACKET_HOME/bin
 export PATH=$PATH:$SML_HOME/bin
 export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin
 export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
@@ -101,6 +103,10 @@ alias tac='tail -r'
 alias cdp='cd $PROJECTS_HOME'
 alias g='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 alias chopen='/usr/bin/open -a "/Applications/Google Chrome.app"'
+
+# Use arrows instead of CTRL-R to traverse history
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
 
 # Windows specific settings
 #alias vi=vim
