@@ -16,12 +16,13 @@ export PROJECTS_HOME=~/projects
 export ERLANG_HOME=/opt/erlang/otp
 export ERL_LIB=$ERLANG_HOME/lib/erlang/lib
 
+export QHOME=~/q
 export APL_HOME=/opt/apl/apl
 export RACKET_HOME=/Applications/Racket\ v5.3.6
 export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
 export SML_HOME=/usr/local/smlnj
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
 export JVISUALVM_HOME=/opt/visualvm/visualvm
 
 export SCALA_HOME=/opt/scala/sbt
@@ -58,7 +59,8 @@ export MAVEN_OPTS="-Xms512m -Xmx768m"
 ## Path
 ##
 export PATH=~/bin:$JVISUALVM_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=$PATH:$QHOME/m32
 export PATH=$PATH:$APL_HOME/bin
 export PATH=$PATH:$RACKET_HOME/bin
 export PATH=$PATH:$SML_HOME/bin
@@ -97,11 +99,13 @@ export EDITOR=vi
 ##
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias zgrep='zgrep --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -al'
 alias tac='tail -r'
 alias cdp='cd $PROJECTS_HOME'
 alias g='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
+alias q='rlwrap q'
 alias chopen='/usr/bin/open -a "/Applications/Google Chrome.app"'
 
 # Use arrows instead of CTRL-R to traverse history
