@@ -108,6 +108,9 @@ nnoremap ; :
 
 nnoremap <leader>v V`] 
 
+" Delete buffer without closing window
+nmap <leader>d :b#<bar>bd#<CR>
+
 " In normal mode, jj escapes
 inoremap jj <ESC>
 
