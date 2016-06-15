@@ -107,6 +107,7 @@ alias cdp='cd $PROJECTS_HOME'
 alias g='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 alias q='rlwrap q'
 alias chopen='/usr/bin/open -a "/Applications/Google Chrome.app"'
+alias unmount='umount'
 
 # Use arrows instead of CTRL-R to traverse history
 bind '"\e[A":history-search-backward'
