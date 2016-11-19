@@ -1,6 +1,7 @@
 [user]
     name = Andrey Paramonov
     email = github@ndpar.com
+    signingkey = B1204A8E
 [core]
     excludesfile = ~/.gitignore
 [color]
@@ -18,7 +19,7 @@
     df = diff -w
     dw = diff -w --word-diff
     lg = log -p
-    k = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev=8
+    k = log --all --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev=8
     home = rev-parse --show-toplevel
     dt = diff-tree --no-commit-id --name-only
 [pull]
