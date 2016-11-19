@@ -18,12 +18,11 @@ export ERL_LIB=$ERLANG_HOME/lib/erlang/lib
 
 export QHOME=~/q
 export APL_HOME=/opt/apl/apl
-export RACKET_HOME=/Applications/Racket\ v5.3.6
+export RACKET_HOME=/Applications/Racket\ v6.6
 export SBCL_HOME=/opt/lisp/sbcl/sbcl/lib/sbcl
 export SML_HOME=/usr/local/smlnj
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
-export JVISUALVM_HOME=/opt/visualvm/visualvm
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/default/Contents/Home
 
 export SCALA_HOME=/opt/scala/sbt
 export GROOVY_HOME=/opt/groovy/groovy
@@ -52,19 +51,18 @@ export SOAPUI_HOME=/opt/soapui/soapui
 
 ## Java options
 ##
-export ANT_OPTS="-Xms512m -Xmx1024m"
 export MAVEN_OPTS="-Xms512m -Xmx768m"
 #export JAVA_OPTS="$JAVA_OPTS -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
 
 ## Path
 ##
-export PATH=~/bin:$JVISUALVM_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
+export PATH=~/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=$PATH:$QHOME/m32
 export PATH=$PATH:$APL_HOME/bin
 export PATH=$PATH:$RACKET_HOME/bin
 export PATH=$PATH:$SML_HOME/bin
-export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin
+export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin
 export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
 export PATH=$PATH:$MONGODB_HOME/bin
 export PATH=$PATH:$NODEJS_HOME/bin
@@ -74,8 +72,8 @@ export PATH=$PATH:$RABBITMQ_HOME/sbin
 export PATH=$PATH:$RIAK_HOME/bin
 export PATH=$PATH:$RIAK_CS_HOME/bin
 export PATH=$PATH:$STANCHION_HOME/bin
+export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:/opt/lisp/sbcl/sbcl/bin
-export PATH=$PATH:/Applications/Flash\ Player.app/Contents/MacOS/
 
 # Optional (and useful) Git commands
 export PATH=$PATH:$PROJECTS_HOME/gitorious/willgit/bin
