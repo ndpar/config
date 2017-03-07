@@ -11,6 +11,7 @@
     branch = auto
     interactive = auto
 [alias]
+    sh = show HEAD
     st = status
     ss = status -sb
     ci = commit
