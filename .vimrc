@@ -150,7 +150,7 @@ if has("gui_running")
     set guioptions-=b       " get rid of bottom scrollbar
     set go-=L               " get rid of left split scrollbar
     set go-=r               " get rid of right split scrollbar
-    colorscheme xoria256    " make sure you have this scheme in ~/.vim/colors
+    colorscheme morning     " make sure you have this scheme in ~/.vim/colors
     if has("window")
         set guifont=lucida_console:h8
     elseif has("mac")
