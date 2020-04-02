@@ -58,7 +58,7 @@ export MAVEN_OPTS="-Xms512m -Xmx768m"
 ##
 export PATH=~/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export PATH=$PATH:$QHOME/m32
+export PATH=$PATH:$QHOME/m64
 export PATH=$PATH:$APL_HOME/bin
 export PATH=$PATH:$RACKET_HOME/bin
 export PATH=$PATH:$SML_HOME/bin
