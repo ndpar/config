@@ -29,7 +29,6 @@ export GROOVY_HOME=/opt/groovy/groovy
 export GRAILS_HOME=/opt/grails/grails
 export APPENGINE_HOME=/opt/google/appengine-java-sdk
 
-export MAVEN_HOME=/opt/maven/maven
 export ANT_HOME=/usr/share/ant
 export GRADLE_HOME=/opt/gradle/gradle
 
@@ -44,7 +43,7 @@ export RIAK_CS_HOME=/opt/riak/riak-cs/rel/riak-cs
 export STANCHION_HOME=/opt/riak/stanchion/rel/stanchion
 
 export YAWS_HOME=/opt/yaws/yaws
-export RABBITMQ_HOME=/opt/rabbitmq/rabbitmq
+export RABBITMQ_HOME=/usr/local/opt/rabbitmq
 export NODEJS_HOME=/opt/nodejs/nodejs
 export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
 export SOAPUI_HOME=/opt/soapui/soapui
@@ -56,7 +55,7 @@ export MAVEN_OPTS="-Xms512m -Xmx768m"
 
 ## Path
 ##
-export PATH=~/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
+export PATH=~/bin:$JAVA_HOME/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=$PATH:$QHOME/m64
 export PATH=$PATH:$APL_HOME/bin
@@ -80,6 +79,9 @@ export PATH=$PATH:$PROJECTS_HOME/gitorious/willgit/bin
 
 # FOP is required to build Erlang docs
 export PATH=$PATH:/opt/fop/fop
+
+## Homebrew packages
+# ack bash dos2unix erlang htop jq maven rabbitmq redis telnet wget
 
 # Ruby manager
 export PATH=$PATH:$HOME/.rvm/bin
