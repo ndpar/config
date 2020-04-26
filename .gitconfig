@@ -22,7 +22,8 @@
     lg = log -p
     k = log --all --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev=8
     home = rev-parse --show-toplevel
-    dt = diff-tree --no-commit-id --name-only
+    dt = diff-tree --no-commit-id --name-only -r
+    rh = reset --hard
 [pull]
     rebase = true
 [push]
