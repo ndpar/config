@@ -25,12 +25,8 @@ export SML_HOME=/usr/local/smlnj
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/default/Contents/Home
 
 export SCALA_HOME=/opt/scala/sbt
-export GROOVY_HOME=/opt/groovy/groovy
 export GRAILS_HOME=/opt/grails/grails
 export APPENGINE_HOME=/opt/google/appengine-java-sdk
-
-export ANT_HOME=/usr/share/ant
-export GRADLE_HOME=/opt/gradle/gradle
 
 export JBOSS_HOME=/opt/jboss/jboss
 export JETTY_HOME=/opt/jetty/jetty
@@ -42,7 +38,6 @@ export RIAK_HOME=/opt/riak/riak/rel/riak
 export RIAK_CS_HOME=/opt/riak/riak-cs/rel/riak-cs
 export STANCHION_HOME=/opt/riak/stanchion/rel/stanchion
 
-export YAWS_HOME=/opt/yaws/yaws
 export RABBITMQ_HOME=/usr/local/opt/rabbitmq
 export NODEJS_HOME=/opt/nodejs/nodejs
 export MULTIMARKDOWN_HOME=/opt/multimarkdown/multimarkdown
@@ -61,12 +56,11 @@ export PATH=$PATH:$QHOME/m64
 export PATH=$PATH:$APL_HOME/bin
 export PATH=$PATH:$RACKET_HOME/bin
 export PATH=$PATH:$SML_HOME/bin
-export PATH=$PATH:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin
+export PATH=$PATH:$SCALA_HOME/bin:$GRAILS_HOME/bin
 export PATH=$PATH:$SOAPUI_HOME/bin:$APPENGINE_HOME/bin:$MULTIMARKDOWN_HOME/bin:$PROJECTS_HOME/ndpar/ruby
 export PATH=$PATH:$MONGODB_HOME/bin
 export PATH=$PATH:$NODEJS_HOME/bin
 export PATH=$PATH:$ERLANG_HOME/bin
-export PATH=$PATH:$YAWS_HOME/bin
 export PATH=$PATH:$RABBITMQ_HOME/sbin
 export PATH=$PATH:$RIAK_HOME/bin
 export PATH=$PATH:$RIAK_CS_HOME/bin
@@ -81,7 +75,7 @@ export PATH=$PATH:$PROJECTS_HOME/gitorious/willgit/bin
 export PATH=$PATH:/opt/fop/fop
 
 ## Homebrew packages
-# ack bash dos2unix erlang htop jq maven rabbitmq redis telnet wget
+# ack bash dos2unix erlang groovy htop jq maven rabbitmq redis telnet wget yaws
 
 # Ruby manager
 export PATH=$PATH:$HOME/.rvm/bin
